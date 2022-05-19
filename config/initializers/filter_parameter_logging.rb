@@ -2,7 +2,7 @@
 
 # Configure sensitive parameters which will be filtered from the log file.
 Rails.application.config.filter_parameters += [
-  # :passw, # TODO: comment back in to hide params beginning with "passw"
+  :passw, # TODO: comment back in to hide params beginning with "passw"
   :secret,
   :token,
   :_key,
@@ -10,5 +10,6 @@ Rails.application.config.filter_parameters += [
   :salt,
   :certificate,
   :otp,
-  :ssn
+  :ssn,
+  :creditcard
 ]
