@@ -6,5 +6,5 @@ Rails.application.routes.draw do
   resources "users"
   resources "sessions"
 
-  get("/logout", { :controller => "sessions", :action => "index" })
+  get("/", { :controller => "sessions", :action => "new" })
 end
